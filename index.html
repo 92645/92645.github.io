@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你愿意做我女朋友吗？</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+    
+    <!-- 可爱动物和人物元素 -->
+    <div class="cute-elements">
+        <div class="cute-element dog"><i class="fas fa-dog"></i></div>
+        <div class="cute-element cat"><i class="fas fa-cat"></i></div>
+        <div class="cute-element rabbit"><i class="fas fa-paw"></i></div>
+        <div class="cute-element bear"><i class="fas fa-paw"></i></div>
+        <div class="cute-element couple"><i class="fas fa-heart"></i></div>
+        <div class="cute-element panda"><i class="fas fa-paw"></i></div>
+        <div class="cute-element fox"><i class="fas fa-paw"></i></div>
+        <div class="cute-element penguin"><i class="fas fa-paw"></i></div>
+        <div class="cute-element owl"><i class="fas fa-paw"></i></div>
+    </div>
+    
+    <div class="container" id="mainContainer">
+        <h1>你愿意做我女朋友吗？</h1>
+        <p class="subtitle">请点击下方按钮告诉我你的答案</p>
+        
+        <div class="buttons">
+            <button class="btn yes-btn" id="yesBtn">愿意</button>
+            <button class="btn no-btn" id="noBtn">不愿意</button>
+        </div>
+        
+        <div class="message-container">
+            <div class="message" id="message"></div>
+        </div>
+        
+        <div class="persuasion-message" id="persuasionMessage"></div>
+    </div>
+
+    <!-- 全屏渐变爱心特效 -->
+    <div class="heart-gradient" id="heartGradient">
+        <div class="heart-bg"></div>
+    </div>
+    
+    <!-- 下一个页面 -->
+    <div class="next-page" id="nextPage">
+        <h1>太棒了！❤️</h1>
+        <p>你是我生命中最美好的礼物！</p>
+        
+        <div class="love-letter">
+            <p>亲爱的，从今天起，我们的故事将翻开新的篇章。</p>
+            <p>我会用一生的时间，让你感受到被爱的幸福！</p>
+            <p>每一个清晨，每一个黄昏，都想与你一同度过。</p>
+            <p>你的笑容是我最大的动力，你的幸福是我永恒的追求。</p>
+            <p>谢谢你选择了我，让我有机会成为你的依靠。</p>
+        </div>
+        
+        <button class="final-btn" id="finalBtn">开启我们的幸福旅程</button>
+    </div>
+
+    <!-- 音乐控制 -->
+    <div class="music-control" id="musicControl">
+        <i class="fas fa-music"></i>
+    </div>
+
+    <!-- 背景音乐 -->
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-romantic-serenade-309.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
